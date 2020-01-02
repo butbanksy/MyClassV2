@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyClass.Views.SignUpPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Sign Up"
+    Visual="Material"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="MainLayout">
+                <StackLayout x:Name="LoginStack" Padding="50,50,50,10">
+                    <Image
+                        x:Name="LoginIcon"
+                        HeightRequest="250"
+                        WidthRequest="250" />
+                </StackLayout>
+                <StackLayout Padding="30,50,30,0">
+                    <Label Text="Prénom" />
+                    <Entry x:Name="firstNameText" Placeholder="Entrer votre prénom..." />
+                    <Label Text="Nom" />
+                    <Entry x:Name="lastNameText" Placeholder="Entrer votre nom..." />
+                    <Label Text="Nom" />
+                    <Entry x:Name="loginText" Placeholder="Entrer votre login..." />
+                    <Label Text="Mot de passe" />
+                    <Entry
+                        x:Name="passwordText"
+                        IsPassword="True"
+                        Placeholder="Entrer votre mot de passe..." />
+                    <Label Text="Retaper le mot de passe" />
+
+                    <Entry
+                        x:Name="reconfirmPasswordText"
+                        IsPassword="True"
+                        Placeholder="Confirmer votre mot de passe..." />
+                    <Button
+                        Margin="70,0,70,20"
+                        BackgroundColor="#FF081A23"
+                        Clicked="Button_Clicked"
+                        Text="Sign up" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

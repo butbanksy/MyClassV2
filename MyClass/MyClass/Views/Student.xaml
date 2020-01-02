@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyClass.Views.Student"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Ajouter Etudiant"
+    Icon="add.png">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="MainLayout">
+                <StackLayout x:Name="StudentStack" Padding="50,50,50,10">
+                    <Image
+                        x:Name="StudentIcon"
+                        HeightRequest="50"
+                        WidthRequest="50" />
+                </StackLayout>
+                <StackLayout Padding="30,50,30,0">
+                    <Label Text="CNE" />
+                    <Entry x:Name="cneText" Keyboard="Numeric"  Placeholder="Entrer le CNE..." />
+                    <Label Text="Prénom" />
+                    <Entry x:Name="firstNameText" Placeholder="Entrer le prénom..." />
+                    <Label Text="Nom" />
+                    <Entry x:Name="lastNameText" Placeholder="Entrer le nom..." />
+                    <Label Text="Email" />
+                    <Entry x:Name="emailText" Keyboard="Email" Placeholder="Entrer l'email..." />
+                    <Label Text="Numéro de téléphone" />
+                    <Entry x:Name="phoneNumberText" Keyboard="Telephone" Placeholder="Entrer le numéro de téléphone..." />
+                    <Label Text="Filière" />
+                    <Picker x:Name="filiereText"
+                        Title="Filière">
+                        
+                        <Picker.Items>
+                        <x:String>Génie Informatique</x:String>
+                        <x:String>Génie Réseaux et Télécoms</x:String>
+                        <x:String>Génie Industriel</x:String>
+                        <x:String>Génie PMC</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Button
+                        Margin="70,0,70,20"
+                        BackgroundColor="#FF081A23"
+                        Clicked="Button_Clicked"
+                        Text="Ajouter Etudiant" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
