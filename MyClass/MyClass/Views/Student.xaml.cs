@@ -31,7 +31,7 @@ namespace MyClass.Views
                 switch (StudentServices.checkForm(cneText.Text, firstNameText.Text, lastNameText.Text, emailText.Text, phoneNumberText.Text, filiereText.SelectedItem.ToString()))
                 {
                     case 0:
-                        DisplayAlert(null, "You have successfully added a new student", "Back");
+                        DisplayAlert("Success", "You have successfully added a new student", "Back");
 
                         break;
                     case 1:
