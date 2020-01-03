@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {}
+    "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {
+    "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+        "projectUniqueName": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
         "projectName": "MyClass.Android",
-        "projectPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+        "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
         "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.Android\\obj\\",
+        "outputPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\MyClass.csproj": {
-                "projectPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\MyClass.csproj"
+              "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
+                "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\MyClass.csproj": {
+    "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\MyClass.csproj",
+        "projectUniqueName": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
         "projectName": "MyClass",
-        "projectPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\MyClass.csproj",
+        "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
         "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\obj\\",
+        "outputPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

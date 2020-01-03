@@ -10,7 +10,7 @@
     Title="MyClass"
     mc:Ignorable="d">
 
-
+    <local:Absence/>
     <local:Search/>
     <local:Student/>
     

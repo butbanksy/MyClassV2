@@ -15,5 +15,10 @@ namespace MyClass.Models
         public string email { get; set; }
         public string phoneNumber { get; set; }
         public string filiere { get; set; }
+
+        public override string ToString()
+        {
+            return firstName + " " + lastName + " " + filiere;
+        }
     }
 }

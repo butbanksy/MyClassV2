@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyClass.Views.Absence"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Absence"
+    Icon="list.png"
+    Visual="Material"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Picker x:Name="filierePicker" Title="Filière" SelectedIndexChanged="FilierePicker_SelectedIndexChanged">
+
+                    <Picker.Items>
+                        <x:String>Génie Informatique</x:String>
+                        <x:String>Génie Réseaux et Télécoms</x:String>
+                        <x:String>Génie Industriel</x:String>
+                        <x:String>Génie PMC</x:String>
+                    </Picker.Items>
+
+                </Picker>
+                <Picker x:Name="coursePicker" Title="Module" IsEnabled="False" >
+                    
+                </Picker>
+                <ListView x:Name="listView" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

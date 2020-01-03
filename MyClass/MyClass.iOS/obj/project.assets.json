@@ -1446,11 +1446,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.iOS\\MyClass.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.iOS\\MyClass.iOS.csproj",
       "projectName": "MyClass.iOS",
-      "projectPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.iOS\\MyClass.iOS.csproj",
+      "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.iOS\\MyClass.iOS.csproj",
       "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass.iOS\\obj\\",
+      "outputPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1471,8 +1471,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\MyClass.csproj": {
-              "projectPath": "C:\\Users\\banksy\\Desktop\\MyClass\\MyClass\\MyClass\\MyClass.csproj"
+            "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
+              "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
             }
           }
         }
