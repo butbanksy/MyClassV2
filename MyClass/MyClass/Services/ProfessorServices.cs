@@ -62,17 +62,24 @@ namespace MyClass.Services
 
         public static Professor checkLogin(string login, string password)
         {
+
             var db = new SQLiteConnection(_dbPath);
-            Professor professor = db.Table<Professor>().Where(i => i.login == login && i.password == password).FirstOrDefault();
-            if (professor !=null)
+            TableQuery<Professor> tableQuery = db.Table<Professor>();
+            Console.WriteLine(tableQuery.Count());
+            if (tableQuery != null && tableQuery.Count() > 0)
             {
-                return professor;
+                Professor professor = tableQuery.Where(i => i.login == login && i.password == password).FirstOrDefault();
+                if (professor != null)
+                {
+                    return professor;
+                }
             }
             return null;
         }
     }
 }
-        
+
+
 
 
 

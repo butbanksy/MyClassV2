@@ -19,13 +19,18 @@ namespace MyClass.Views
         {
             InitializeComponent();
             var db = new SQLiteConnection(_dbPath);
-            listView.ItemsSource = db.Table<MyClass.Models.Student>().OrderBy(x => x.firstName).ToList();
+            TableQuery<Models.Student> tableQuery = db.Table<MyClass.Models.Student>();
+            if (tableQuery != null && tableQuery.Count() > 0)
+            {
+                listView.ItemsSource = tableQuery.OrderBy(x => x.firstName).ToList();
+            }
+
         }
 
         private void FilierePicker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            Picker picker = (Picker) sender;
+
+            Picker picker = (Picker)sender;
             filiereSelected = picker.SelectedIndex;
             coursePicker.IsEnabled = true;
             coursePicker.Items.Clear();

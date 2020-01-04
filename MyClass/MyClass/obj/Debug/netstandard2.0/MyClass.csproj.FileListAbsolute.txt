@@ -62,7 +62,6 @@ C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\Views\Search.xaml.g.cs
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\Views\Student.xaml.g.cs
-C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\MyClass.csproj.CoreCompileInputs.cache
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\MyClass.AssemblyInfoInputs.cache
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\MyClass.AssemblyInfo.cs
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\XamlC.stamp

@@ -1139,7 +1139,6 @@ C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\flat
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\flata\compiled.flata
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\R.txt
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\R.cs.flag
-C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\MyClass.Android.csproj.CoreCompileInputs.cache
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\XamlC.stamp
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\MyClass.Android.csproj.CopyComplete
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\MyClass.Android.dll
@@ -1668,3 +1667,11 @@ C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\stam
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\res\drawable\list.png
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.jm.arm64-v8a.s
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.jm.armeabi-v7a.s
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.jm.x86.s
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.jm.x86_64.s
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.mj.arm64-v8a.s
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.mj.armeabi-v7a.s
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.mj.x86.s
+C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass.Android\obj\Debug\90\android\typemap.mj.x86_64.s
