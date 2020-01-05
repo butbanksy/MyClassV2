@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--<TabbedPage
     x:Class="MyClass.Views.Home"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -14,7 +14,7 @@
     <local:Search />
     <local:Student />
     <local:Lecture/>
-    <!-- <Shell>
+    <Shell>
         <FlyoutItem
             Title="MyTabApp"
             FlyoutDisplayOptions="AsMultipleItems"
@@ -26,5 +26,47 @@
             </Tab>
         </FlyoutItem>
     </Shell>
--->
-</TabbedPage>
+
+</TabbedPage>-->
+<Shell
+    x:Class="MyClass.Views.Home"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Visual="Material"
+    xmlns:local="clr-namespace:MyClass.Views">
+    
+
+
+   <Shell.FlyoutHeader>
+        <local:HeaderContentView/>
+    </Shell.FlyoutHeader> 
+
+
+    <FlyoutItem
+        Title="MyTabApp"
+        FlyoutDisplayOptions="AsMultipleItems"
+        Shell.TabBarIsVisible="False">
+        <ShellContent
+            Title="Historique d'absences"
+            ContentTemplate="{DataTemplate local:Absence}"
+            Icon="list.png" />
+        <ShellContent
+            Title="Ajouter une séance"
+            ContentTemplate="{DataTemplate local:Lecture}"
+            Icon="addLecture.png" />
+        <ShellContent
+            Title="Ajouter un(e) étudiant(e)"
+            ContentTemplate="{DataTemplate local:Student}"
+            Icon="add.png" />
+        <ShellContent
+            Title="Chercher un(e) étudiant(e)"
+            ContentTemplate="{DataTemplate local:Lecture}"
+            Icon="search.png" />
+
+
+
+    </FlyoutItem>
+
+
+
+</Shell>

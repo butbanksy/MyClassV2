@@ -14,7 +14,7 @@ namespace MyClass.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Home.xaml")]
-    public partial class Home : global::Xamarin.Forms.TabbedPage {
+    public partial class Home : global::Xamarin.Forms.Shell {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {

@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Validators\**" />
+    <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Validators\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\Student.png" />
     <None Remove="Resources\TeacherLogo.png" />
     <None Remove="Resources\TeacherLogoOld.png" />
@@ -29,22 +35,6 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Validators\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Telerik.XamarinForms.Common">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Portable\Telerik.XamarinForms.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataControls">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Portable\Telerik.XamarinForms.DataControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Input">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Portable\Telerik.XamarinForms.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Primitives">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Portable\Telerik.XamarinForms.Primitives.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>
@@ -67,6 +57,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Lecture.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Page1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Search.xaml">
