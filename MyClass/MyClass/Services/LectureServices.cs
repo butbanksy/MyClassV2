@@ -16,6 +16,7 @@ namespace MyClass.Services
             var db = new SQLiteConnection(_dbPath);
             db.CreateTable<Lecture>();
 
+            Console.WriteLine(students.Count);
             var maxPk = db.Table<Lecture>().OrderByDescending(c => c.id).FirstOrDefault();
             Lecture lecture = new Lecture()
             {

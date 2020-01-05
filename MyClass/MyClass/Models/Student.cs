@@ -16,6 +16,14 @@ namespace MyClass.Models
         public string phoneNumber { get; set; }
         public string filiere { get; set; }
 
+        public int absence { get; set; }
+
+        public int presence { get; set; }
+
+        public string infoFull
+        {
+            get { return $"{firstName} {lastName}"; }
+        }
         public override string ToString()
         {
             return firstName + " " + lastName + " " + filiere;

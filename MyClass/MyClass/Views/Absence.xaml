@@ -12,20 +12,30 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Picker x:Name="filierePicker" Title="Filière" SelectedIndexChanged="FilierePicker_SelectedIndexChanged">
+                <ListView
+                    x:Name="listView"
+                    HasUnevenRows="True"
+                    IsPullToRefreshEnabled="True"
+                    Refreshing="ListView_Refreshing"
+                    ItemSelected="ListView_ItemSelected">
+                  <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="5" Orientation="Horizontal">
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding courseName}" TextColor="Black" />
+                                        <Label
+                                            FontSize="Small"
+                                            Text="{Binding filiereName}"
+                                            TextColor="Gray" />
+                                    </StackLayout>
+                                    <Label Text="{Binding dateTime}" TextColor="Black" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
-                    <Picker.Items>
-                        <x:String>Génie Informatique</x:String>
-                        <x:String>Génie Réseaux et Télécoms</x:String>
-                        <x:String>Génie Industriel</x:String>
-                        <x:String>Génie PMC</x:String>
-                    </Picker.Items>
-
-                </Picker>
-                <Picker x:Name="coursePicker" Title="Module" IsEnabled="False" >
-                    
-                </Picker>
-                <ListView x:Name="listView" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

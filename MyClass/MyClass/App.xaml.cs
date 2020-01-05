@@ -14,7 +14,7 @@ namespace MyClass
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new Home());
             
         }
 

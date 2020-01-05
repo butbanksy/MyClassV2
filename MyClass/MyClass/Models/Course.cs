@@ -12,5 +12,6 @@ namespace MyClass.Models
         public string courseName { get; set; }
         
         public string courseFiliere { get; set; }
+
     }
 }
