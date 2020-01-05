@@ -2,13 +2,13 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
-      "Newtonsoft.Json/9.0.1": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "sqlite-net-pcl/1.4.118": {
@@ -34,6 +34,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
+      "SQLiteNetExtensions.Async/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "SQLiteNetExtensions": "2.0.0",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensionsAsync.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensionsAsync.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.5": {
@@ -900,7 +913,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "SQLiteNetExtensions": "2.1.0",
+          "SQLiteNetExtensions.Async": "2.1.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991265",
           "Xamarin.Forms.Visual.Material": "4.4.0.991265",
@@ -916,14 +931,14 @@
     }
   },
   "libraries": {
-    "Newtonsoft.Json/9.0.1": {
-      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/9.0.1",
-      "hasTools": true,
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -934,13 +949,17 @@
         "lib/net45/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
-        "tools/install.ps1"
+        "packageIcon.png"
       ]
     },
     "sqlite-net-pcl/1.4.118": {
@@ -972,6 +991,35 @@
         "lib/netstandard1.1/SQLiteNetExtensions.pdb",
         "sqlitenetextensions.2.1.0.nupkg.sha512",
         "sqlitenetextensions.nuspec",
+        "src/SQLiteNetExtensions/Attributes/CascadeOperation.cs",
+        "src/SQLiteNetExtensions/Attributes/ForeignKeyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/RelationshipAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/TextBlobAttribute.cs",
+        "src/SQLiteNetExtensions/Exceptions/IncorrectRelationshipException.cs",
+        "src/SQLiteNetExtensions/Extensions/ReadOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/ReflectionExtensions.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/ITextBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/Serializers/JsonBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/TextBlobOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/WriteOperations.cs",
+        "src/SQLiteNetExtensions/Properties/AssemblyInfo.cs"
+      ]
+    },
+    "SQLiteNetExtensions.Async/2.1.0": {
+      "sha512": "jiIewsMh0Zfv1dB5Jp9eylckDOmVqNx5uPoFunfwAJApimL71bja7OxF55pFlz7TTiSm0rTkn3aWE6Gz89qUDw==",
+      "type": "package",
+      "path": "sqlitenetextensions.async/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLiteNetExtensionsAsync.dll",
+        "lib/netstandard1.1/SQLiteNetExtensionsAsync.pdb",
+        "sqlitenetextensions.async.2.1.0.nupkg.sha512",
+        "sqlitenetextensions.async.nuspec",
         "src/SQLiteNetExtensions/Attributes/CascadeOperation.cs",
         "src/SQLiteNetExtensions/Attributes/ForeignKeyAttribute.cs",
         "src/SQLiteNetExtensions/Attributes/ManyToManyAttribute.cs",
@@ -2219,6 +2267,8 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "MyClass >= 1.0.0",
+      "SQLiteNetExtensions >= 2.1.0",
+      "SQLiteNetExtensions.Async >= 2.1.0",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.3",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.4.0.991265",
@@ -2268,6 +2318,14 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "SQLiteNetExtensions": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
+          "SQLiteNetExtensions.Async": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
           "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
             "version": "[28.0.0.3, )"

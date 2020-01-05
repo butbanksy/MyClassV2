@@ -11,7 +11,7 @@
         <ScrollView>
             <StackLayout>
                 
-                <!--<ListView x:Name="listView" HasUnevenRows="True">
+               <ListView x:Name="listView" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -28,9 +28,8 @@
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                </ListView> -->
-                <Label x:Name="label"/>
-                <ListView x:Name="listView"/>
+                </ListView> 
+               
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

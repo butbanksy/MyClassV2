@@ -15,7 +15,8 @@ namespace MyClass.Views
         public UpdateLecture(Models.Lecture lecture)
         {
             InitializeComponent();
-            listView.ItemsSource = lecture.students.ToList();
+            listView.ItemsSource = lecture.students;
+            //label.Text = lecture.courseName + " " + lecture.dateTime + " " + lecture.filiereName;
            
         }
     }

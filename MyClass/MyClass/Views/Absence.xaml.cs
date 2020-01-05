@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.IO;
+using MyClass.Services;
 
 namespace MyClass.Views
 {
@@ -16,15 +17,16 @@ namespace MyClass.Views
         String _dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "myClass.db3");
         public Absence()
         {
+            
             InitializeComponent();
             getLecturesList();
         }
 
         private void getLecturesList()
         {
-            var db = new SQLiteConnection(_dbPath);
-            TableQuery<Models.Lecture> tableQuery = db.Table<MyClass.Models.Lecture>();
-            listView.ItemsSource = tableQuery;
+         /*   var db = new SQLiteConnection(_dbPath);
+            TableQuery<Models.Lecture> tableQuery = db.Table<MyClass.Models.Lecture>();*/
+            listView.ItemsSource = LectureServices.GetLecturesAsync().Result;
         }
 
 
@@ -37,7 +39,7 @@ namespace MyClass.Views
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var lecture = e.SelectedItem as Models.Lecture;
-            DisplayAlert("Hello", lecture.students.Count.ToString(), "back");
+          
             App.Current.MainPage = new NavigationPage(new UpdateLecture(lecture));
         }
     }

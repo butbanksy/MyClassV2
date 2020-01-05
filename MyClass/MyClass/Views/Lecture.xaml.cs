@@ -59,7 +59,6 @@ namespace MyClass.Views
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert(filiereSelected, filiereSelected, filiereSelected);
             var db = new SQLiteConnection(_dbPath);
             TableQuery<Models.Student> tableQuery = db.Table<MyClass.Models.Student>();
             List<Models.Student> students = new List<Models.Student>();
