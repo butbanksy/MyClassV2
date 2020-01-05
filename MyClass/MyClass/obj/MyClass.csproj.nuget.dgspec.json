@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {}
+    "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {}
   },
   "projects": {
-    "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
+    "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
+        "projectUniqueName": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
         "projectName": "MyClass",
-        "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
-        "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\obj\\",
+        "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
+        "packagesPath": "C:\\Users\\Oussidi_Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\banksy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oussidi_Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -79,10 +78,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,27 +11,20 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="MainLayout">
-                <StackLayout x:Name="StudentStack" Padding="50,50,50,10">
+                <!--<StackLayout x:Name="StudentStack" Padding="0,50,0,0">
                     <Image
                         x:Name="StudentIcon"
                         HeightRequest="50"
                         WidthRequest="50" />
-                </StackLayout>
+                </StackLayout>-->
                 <StackLayout Padding="30,50,30,0">
-                    <Label Text="CNE" />
-                    <Entry x:Name="cneText" Keyboard="Numeric"  Placeholder="Entrer le CNE..." />
-                    <Label Text="Prénom" />
-                    <Entry x:Name="firstNameText" Placeholder="Entrer le prénom..." />
-                    <Label Text="Nom" />
-                    <Entry x:Name="lastNameText" Placeholder="Entrer le nom..." />
-                    <Label Text="Email" />
-                    <Entry x:Name="emailText" Keyboard="Email" Placeholder="Entrer l'email..." />
-                    <Label Text="Numéro de téléphone" />
-                    <Entry x:Name="phoneNumberText" Keyboard="Telephone" Placeholder="Entrer le numéro de téléphone..." />
-                    <Label Text="Filière" />
-                    <Picker x:Name="filiereText"
+                    <Entry BackgroundColor="White" x:Name="cneText" Keyboard="Numeric"  Placeholder="Entrer le CNE..." />
+                    <Entry BackgroundColor="White" Margin="0,5,0,5" x:Name="firstNameText" Placeholder="Entrer le prénom..." />
+                    <Entry BackgroundColor="White" Margin="0,5,0,5" x:Name="lastNameText" Placeholder="Entrer le nom..." />
+                    <Entry BackgroundColor="White" Margin="0,5,0,5" x:Name="emailText" Keyboard="Email" Placeholder="Entrer l'email..." />
+                    <Entry BackgroundColor="White" Margin="0,5,0,5" x:Name="phoneNumberText" Keyboard="Telephone" Placeholder="Entrer le numéro de téléphone..." />
+                    <Picker BackgroundColor="White" Margin="0,5,0,5"  x:Name="filiereText"
                         Title="Filière">
-                        
                         <Picker.Items>
                         <x:String>Génie Informatique</x:String>
                         <x:String>Génie Réseaux et Télécoms</x:String>
@@ -40,7 +33,8 @@
                         </Picker.Items>
                     </Picker>
                     <Button
-                        Margin="70,0,70,20"
+                        Margin="0,20,0,40"
+                        HeightRequest="55"
                         BackgroundColor="#FF081A23"
                         Clicked="Button_Clicked"
                         Text="Ajouter Etudiant" />

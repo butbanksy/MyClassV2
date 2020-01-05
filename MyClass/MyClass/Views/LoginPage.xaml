@@ -17,21 +17,28 @@
                         HeightRequest="250"
                         WidthRequest="250" />
                 </StackLayout>
-                <StackLayout Padding="30,50,30,0">
-                    <Label Text="Username" />
-                    <Entry x:Name="userText" Placeholder="Enter username..." SelectionLength="3" />
-                    <Label Text="Password" />
+                <StackLayout Padding="10,10,10,10">
                     <Entry
+                        BackgroundColor="White"
+                        Margin="10,10,10,0" 
+                        x:Name="userText" 
+                        Placeholder="Enter username..." 
+                        SelectionLength="3" />
+                    <Entry
+                        BackgroundColor="White"
+                        Margin="10,10,10,0"
                         x:Name="passwordText"
                         IsPassword="True"
                         Placeholder="Enter password..." />
                     <Button
-                        Margin="70,20,70,0"
+                        HeightRequest="50"
+                        Margin="10,10,10,0"
                         BackgroundColor="#FF081A23"
                         Clicked="Button_Clicked"
                         Text="Sign In" />
                     <Button
-                        Margin="70,0,70,0"
+                        HeightRequest="50"
+                        Margin="10,10,10,40"
                         BackgroundColor="#FF081A23"
                         Clicked="SignUp_Clicked"
                         Text="Sign Up" />

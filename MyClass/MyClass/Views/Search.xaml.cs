@@ -16,5 +16,12 @@ namespace MyClass.Views
         {
             InitializeComponent();
         }
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            // search student and show data on the same view
+            DisplayAlert("Search Student", "Search Studeny by id or by name","Ok");
+        }
     }
+
+    
 }

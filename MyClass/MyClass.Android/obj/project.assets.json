@@ -2277,24 +2277,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\banksy\\.nuget\\packages\\": {},
+    "C:\\Users\\Oussidi_Mohamed\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+      "projectUniqueName": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
       "projectName": "MyClass.Android",
-      "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
-      "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass.Android\\obj\\",
+      "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+      "packagesPath": "C:\\Users\\Oussidi_Mohamed\\.nuget\\packages\\",
+      "outputPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\banksy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Oussidi_Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2308,8 +2308,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
-              "projectPath": "C:\\Users\\banksy\\Source\\Repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
+            "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
+              "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
             }
           }
         }

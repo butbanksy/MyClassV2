@@ -16,7 +16,7 @@ namespace MyClass.Views
         public Student()
         {
             InitializeComponent();
-            StudentIcon.Source = ImageSource.FromResource("MyClass.Resources.Student.png");
+            //StudentIcon.Source = ImageSource.FromResource("MyClass.Resources.Student.png");
 
         }
 

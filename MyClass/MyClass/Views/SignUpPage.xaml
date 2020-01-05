@@ -17,26 +17,25 @@
                         HeightRequest="250"
                         WidthRequest="250" />
                 </StackLayout>
-                <StackLayout Padding="30,50,30,0">
-                    <Label Text="Prénom" />
-                    <Entry x:Name="firstNameText" Placeholder="Entrer votre prénom..." />
-                    <Label Text="Nom" />
-                    <Entry x:Name="lastNameText" Placeholder="Entrer votre nom..." />
-                    <Label Text="Nom" />
-                    <Entry x:Name="loginText" Placeholder="Entrer votre login..." />
-                    <Label Text="Mot de passe" />
+                <StackLayout Padding="10,10,10,10">
+                    <Entry BackgroundColor="White" Margin="10,5,10,5" x:Name="firstNameText" Placeholder="Entrer votre prénom..." />
+                    <Entry BackgroundColor="White" Margin="10,5,10,5" x:Name="lastNameText" Placeholder="Entrer votre nom..." />
+                    <Entry BackgroundColor="White" Margin="10,5,10,5" x:Name="loginText" Placeholder="Entrer votre login..." />
                     <Entry
+                        BackgroundColor="White" 
+                        Margin="10,5,10,5"
                         x:Name="passwordText"
                         IsPassword="True"
                         Placeholder="Entrer votre mot de passe..." />
-                    <Label Text="Retaper le mot de passe" />
-
+                   
                     <Entry
+                        BackgroundColor="White" 
+                        Margin="10,5,10,5"
                         x:Name="reconfirmPasswordText"
                         IsPassword="True"
                         Placeholder="Confirmer votre mot de passe..." />
                     <Button
-                        Margin="70,0,70,20"
+                        Margin="10,10,10,50"
                         BackgroundColor="#FF081A23"
                         Clicked="Button_Clicked"
                         Text="Sign up" />

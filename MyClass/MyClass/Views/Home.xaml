@@ -60,7 +60,7 @@
             Icon="add.png" />
         <ShellContent
             Title="Chercher un(e) étudiant(e)"
-            ContentTemplate="{DataTemplate local:Lecture}"
+            ContentTemplate="{DataTemplate local:Search}"
             Icon="search.png" />
 
 
