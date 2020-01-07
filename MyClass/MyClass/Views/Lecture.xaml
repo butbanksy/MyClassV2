@@ -9,7 +9,7 @@
              x:Class="MyClass.Views.Lecture">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="15,60,15,0">
+            <StackLayout Padding="15,20,15,0">
                 <Picker BackgroundColor="White" Margin="0,10,0,10" x:Name="filierePicker" Title="Filière" SelectedIndexChanged="FilierePicker_SelectedIndexChanged">
 
                     <Picker.Items>
@@ -23,7 +23,8 @@
                 <Picker BackgroundColor="White" Margin="0,10,0,10" x:Name="coursePicker" Title="Module" IsEnabled="False" >
 
                 </Picker>
-                <Button Margin="0,15,0,0" HeightRequest="60" Text="Add lecture" Clicked="Button_Clicked"></Button>
+                <Button Margin="0,15,0,40" HeightRequest="60" Text="Valider l'absence" Clicked="Button_Clicked"></Button>
+                <ScrollView HeightRequest="500" >
                 <ListView x:Name="listView" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -33,16 +34,14 @@
                                         <Label Text="{Binding infoFull}" TextColor="Black"/>
                                         <Label Text="{Binding filiere}" FontSize="Small" TextColor="Gray"/>
                                     </StackLayout>
-                                    <Switch x:Name="isAbsent" Toggled="IsAbsent_Toggled"></Switch>
+                                    <Switch Toggled="IsAbsent_Toggled"></Switch>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Label Text="cc"></Label>
-
-                
-            </StackLayout>
+                </ScrollView>
+               </StackLayout>
             
         </ScrollView>
     </ContentPage.Content>

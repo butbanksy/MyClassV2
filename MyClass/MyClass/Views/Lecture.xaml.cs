@@ -18,6 +18,8 @@ namespace MyClass.Views
         String _dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "myClass.db3");
         String filiereSelected;
         int filiereID;
+        List<string> selected_switch = new List<string>();
+
 
         public Lecture()
         {
@@ -54,7 +56,17 @@ namespace MyClass.Views
 
         private void IsAbsent_Toggled(object sender, ToggledEventArgs e)
         {
-            
+            var isAbsent =  (Switch) sender;
+            var student = (Models.Student)isAbsent.BindingContext;
+            string id = student.id.ToString();
+
+            if (isAbsent.IsToggled) {
+                if (!selected_switch.Contains(id)) selected_switch.Add(id);
+            } else
+            {
+                if (selected_switch.Contains(id)) selected_switch.Remove(id);
+            }
+         
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -63,6 +75,26 @@ namespace MyClass.Views
             TableQuery<Models.Student> tableQuery = db.Table<MyClass.Models.Student>();
             List<Models.Student> students = new List<Models.Student>();
             students = tableQuery.Where(i => i.filiere == filiereSelected).ToList();
+
+
+            // to review
+            foreach (string id_etudiant in selected_switch)
+            {
+                foreach (Models.Student st in students)
+                {
+                    if (st.id == Int32.Parse(id_etudiant))
+                    {
+                        st.IsAbsent = true;
+                        st.absence++;
+                    }
+                }
+            }
+
+             /*foreach (Models.Student st in students)
+                {
+                Console.WriteLine(st.IsAbsent);
+            }*/
+
             Services.LectureServices.addLecture(coursePicker.SelectedItem.ToString(), DateTime.Now, filierePicker.SelectedItem.ToString(), students);
         }
 

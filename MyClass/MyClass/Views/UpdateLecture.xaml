@@ -23,7 +23,7 @@
                                             Text="{Binding filiere}"
                                             TextColor="Gray" />
                                     </StackLayout>
-                                    <Switch x:Name="isAbsent" />
+                                    <Switch Toggled="IsAbsent_Toggled" IsToggled="{Binding IsAbsent}" />
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
