@@ -101,3 +101,4 @@ D:\4thCycle\ASP-C#\MiniProjects\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2
 D:\4thCycle\ASP-C#\MiniProjects\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\MyClass.pdb
 D:\4thCycle\ASP-C#\MiniProjects\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\MyClass.csprojAssemblyReference.cache
 C:\Users\banksy\Source\Repos\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\MyClass.csprojAssemblyReference.cache
+D:\4thCycle\ASP-C#\MiniProjects\MyClassV2\MyClass\MyClass\obj\Debug\netstandard2.0\Views\Student_Info.xaml.g.cs

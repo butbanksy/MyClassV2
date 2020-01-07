@@ -18,7 +18,7 @@ namespace MyClass.Models
 
         public int absence { get; set; }
 
-        public int presence { get; set; }
+        public bool IsAbsent { get; set; }
 
         public string infoFull
         {

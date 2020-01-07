@@ -45,6 +45,15 @@ namespace MyClass.Views
         {
             listView.ItemsSource = GetEtudiantsList(e.NewTextValue);
         }
+
+        private void ListViewStudent_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var student = e.SelectedItem as Models.Student;
+            //DisplayAlert("Student Selected ",student.firstName,"Ok");
+
+            Navigation.PushAsync(new Student_Info(student));
+
+        }
     }
 
     

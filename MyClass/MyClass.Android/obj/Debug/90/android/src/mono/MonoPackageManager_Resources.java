@@ -3,6 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "MyClass.Android.dll" comes first in this list. */
 		"MyClass.Android.dll",
+		"CardView.dll",
+		"CardViewNetStandard.dll",
 		"FormsViewGroup.dll",
 		"MyClass.dll",
 		"Newtonsoft.Json.dll",

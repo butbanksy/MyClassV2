@@ -12,7 +12,7 @@
             <StackLayout x:Name="MainLayout">
                 <SearchBar Placeholder="Chercher un(e) étudiant(e)..." TextColor="Gray" TextChanged="SearchBar_TextChanged"/>
                 <ListView x:Name="listView" HasUnevenRows="True" IsPullToRefreshEnabled="True"
-                    Refreshing="ListView_Refreshing">
+                    Refreshing="ListView_Refreshing" ItemSelected="ListViewStudent_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
