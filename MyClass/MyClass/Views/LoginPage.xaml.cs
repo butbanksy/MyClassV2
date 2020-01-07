@@ -1,7 +1,9 @@
 ﻿using MyClass.Models;
 using MyClass.Services;
+using SQLite;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +16,13 @@ namespace MyClass.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        String _dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "myClass.db3");
+
         public LoginPage()
         {
+
+            var db = new SQLiteConnection(_dbPath);
+            db.CreateTable<Models.Professor>();
             InitializeComponent();
             LoginIcon.Source = ImageSource.FromResource("MyClass.Resources.TeacherLogo.png");
             init();
@@ -38,7 +45,7 @@ namespace MyClass.Views
             //Console.WriteLine(5+21 + professor == null);
             if (professor != null) // null.
             {
-                Navigation.PushAsync(new Home());
+                Application.Current.MainPage = new Home();
             }
             else
             {

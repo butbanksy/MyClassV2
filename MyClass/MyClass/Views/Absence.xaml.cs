@@ -14,6 +14,7 @@ namespace MyClass.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Absence : ContentPage
     {
+
         String _dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "myClass.db3");
         public Absence()
         {
@@ -39,8 +40,15 @@ namespace MyClass.Views
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var lecture = e.SelectedItem as Models.Lecture;
-          
-            App.Current.MainPage = new NavigationPage(new UpdateLecture(lecture));
+
+            Navigation.PushAsync(new UpdateLecture(lecture));
+        }
+
+        private void MenuItem_Clicked(object sender, EventArgs e)
+        {
+            var menuItem = sender as MenuItem;
+            var lecture = menuItem.CommandParameter as Models.Lecture;
+            LectureServices.RemoveLectureAsyc(lecture);
         }
     }
 }

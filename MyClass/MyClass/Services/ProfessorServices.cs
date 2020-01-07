@@ -65,15 +65,14 @@ namespace MyClass.Services
 
             var db = new SQLiteConnection(_dbPath);
             TableQuery<Professor> tableQuery = db.Table<Professor>();
-            Console.WriteLine(tableQuery.Count());
-            if (tableQuery != null && tableQuery.Count() > 0)
+
+
+            Professor professor = tableQuery.Where(i => i.login == login && i.password == password).FirstOrDefault();
+            if (professor != null)
             {
-                Professor professor = tableQuery.Where(i => i.login == login && i.password == password).FirstOrDefault();
-                if (professor != null)
-                {
-                    return professor;
-                }
+                return professor;
             }
+
             return null;
         }
     }

@@ -10,19 +10,22 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="MainLayout">
-                <StackLayout Padding="10,40,10,10">
-                    <Entry
-                        BackgroundColor="White" 
-                        Margin="10,5,10,5"
-                        x:Name="searchInput"
-                        IsPassword="True"
-                        Placeholder="Student ID ou Student Name ..." />
-                    <Button
-                        Margin="10,10,10,50"
-                        BackgroundColor="#FF081A23"
-                        Clicked="Button_Clicked"
-                        Text="Search" />
-                </StackLayout>
+                <SearchBar Placeholder="Chercher un(e) étudiant(e)..." TextColor="Gray" TextChanged="SearchBar_TextChanged"/>
+                <ListView x:Name="listView" HasUnevenRows="True" IsPullToRefreshEnabled="True"
+                    Refreshing="ListView_Refreshing">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding infoFull}" TextColor="Black"/>
+                                        <Label Text="{Binding filiere}" FontSize="Small" TextColor="Gray"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
             </StackLayout>
         </ScrollView>

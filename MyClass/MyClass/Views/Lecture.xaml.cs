@@ -45,9 +45,9 @@ namespace MyClass.Views
             {
                 
                 case 0: coursePicker.Items.Add("C#"); coursePicker.Items.Add("Java"); coursePicker.Items.Add("PHP"); coursePicker.Items.Add("Androird"); break;
-                case 1: coursePicker.Items.Add("Cazd"); coursePicker.Items.Add("Javzdazda"); coursePicker.Items.Add("PzadHP"); coursePicker.Items.Add("Anzaddroird"); break;
-                case 2: coursePicker.Items.Add("Cazdazdaz#"); coursePicker.Items.Add("zadfrezfzerfrava"); coursePicker.Items.Add("PHtrhhehP"); coursePicker.Items.Add("Andazadqscoird"); break;
-                case 3: coursePicker.Items.Add("C#"); coursePicker.Items.Add("Java"); coursePicker.Items.Add("PHP"); coursePicker.Items.Add("Androird"); break;
+                case 1: coursePicker.Items.Add("BE Réseaux"); coursePicker.Items.Add("Administration Linux"); break;
+                case 2: coursePicker.Items.Add("Thermodynamique et Thermique"); coursePicker.Items.Add("Mécaniques des fluides"); coursePicker.Items.Add("Mathématiques de l’Ingénieur"); break;
+                case 3: coursePicker.Items.Add("Chimie"); coursePicker.Items.Add("Procédés Industriels"); coursePicker.Items.Add("Conduite des procédés"); break;
 
             }
         }

@@ -63,5 +63,12 @@ namespace MyClass.Services
             }
             return 5;
         }
+
+        public static Student findStudent(int id)
+        {
+            var db = new SQLiteConnection(_dbPath);
+            Student student = db.Table<Student>().Where(x => x.id == id).FirstOrDefault();
+            return student;
+        }
     }
 }

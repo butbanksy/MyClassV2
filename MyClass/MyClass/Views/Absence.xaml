@@ -20,7 +20,7 @@
                     ItemSelected="ListView_ItemSelected">
                   <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ViewCell>
+                            <ViewCell> 
                                 <StackLayout Padding="5" Orientation="Horizontal">
                                     <StackLayout HorizontalOptions="StartAndExpand">
                                         <Label Text="{Binding courseName}" TextColor="Black" />
@@ -31,6 +31,9 @@
                                     </StackLayout>
                                     <Label Text="{Binding dateTime}" TextColor="Black" />
                                 </StackLayout>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Supprimer" Clicked="MenuItem_Clicked" IsDestructive="true" CommandParameter="{Binding .}"/>
+                                </ViewCell.ContextActions>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
