@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": ""
+    "signature": "b9e94683c5277bb885e1db3475e2c03a5ae54c38"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,6 +16,7 @@
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991265",
           "Xamarin.Forms.Visual.Material": "4.4.0.991265",
+          "XamarinForms.CardView": "1.1.1.5",
           "sqlite-net-pcl": "1.4.118"
         },
         "runtime": {
@@ -138,6 +139,17 @@
         "dependencies": {
           "Xamarin.Forms": "4.4.0.991265"
         }
+      },
+      "XamarinForms.CardView/1.1.1.5": {
+        "dependencies": {
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wp8+wpa81/CardView.dll": {
+            "assemblyVersion": "1.1.1.5",
+            "fileVersion": "1.1.1.5"
+          }
+        }
       }
     }
   },
@@ -230,6 +242,13 @@
       "sha512": "sha512-6CMuPXGRgfyy4rRkV1LZRkCNohorUwQJj2GOSFyXRFLphbRnf9gLmzQAtgSyvteZgQMvb7vDmrMCwjWk1SDApg==",
       "path": "xamarin.forms.visual.material/4.4.0.991265",
       "hashPath": "xamarin.forms.visual.material.4.4.0.991265.nupkg.sha512"
+    },
+    "XamarinForms.CardView/1.1.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hINUX1T870jmEnXIAkZhG4kenuzbJZNZ76a3wnvAnTipFWIMtS0e7+xyNjAI2SyhgzH/2I9Xt46/RwU1mq4frw==",
+      "path": "xamarinforms.cardview/1.1.1.5",
+      "hashPath": "xamarinforms.cardview.1.1.1.5.nupkg.sha512"
     }
   }
 }

@@ -85,15 +85,17 @@ namespace MyClass.Views
                     if (st.id == Int32.Parse(id_etudiant))
                     {
                         st.IsAbsent = true;
-                        st.absence++;
+                        st.absence ++;
+                        db.Update(st);
                     }
                 }
             }
 
-             /*foreach (Models.Student st in students)
-                {
-                Console.WriteLine(st.IsAbsent);
-            }*/
+            /*foreach (Models.Student st in students)
+               {
+               Console.WriteLine(st.IsAbsent);
+           }*/
+
 
             Services.LectureServices.addLecture(coursePicker.SelectedItem.ToString(), DateTime.Now, filierePicker.SelectedItem.ToString(), students);
         }

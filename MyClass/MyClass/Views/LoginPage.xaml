@@ -19,14 +19,14 @@
                 </StackLayout>
                 <StackLayout Padding="10,10,10,10">
                     <Entry
-                        Text="osidi1998"
+                        Text=""
                         BackgroundColor="White"
                         Margin="10,10,10,0" 
                         x:Name="userText" 
                         Placeholder="Enter username..." 
                         SelectionLength="3" />
                     <Entry
-                        Text="12345678"
+                        Text=""
                         BackgroundColor="White"
                         Margin="10,10,10,0"
                         x:Name="passwordText"

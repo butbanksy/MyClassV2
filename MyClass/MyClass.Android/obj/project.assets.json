@@ -935,7 +935,7 @@
       },
       "MyClass/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "SQLiteNetExtensions": "2.1.0",
@@ -2327,24 +2327,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Oussidi_Mohamed\\.nuget\\packages\\": {},
+    "C:\\Users\\banksy\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+      "projectUniqueName": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
       "projectName": "MyClass.Android",
-      "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
-      "packagesPath": "C:\\Users\\Oussidi_Mohamed\\.nuget\\packages\\",
-      "outputPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\obj\\",
+      "projectPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+      "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Oussidi_Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\banksy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2358,8 +2358,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
-              "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
+            "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
+              "projectPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
             }
           }
         }

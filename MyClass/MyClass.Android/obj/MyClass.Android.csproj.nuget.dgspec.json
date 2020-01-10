@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {}
+    "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {}
   },
   "projects": {
-    "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {
+    "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+        "projectUniqueName": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
         "projectName": "MyClass.Android",
-        "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
-        "packagesPath": "C:\\Users\\Oussidi_Mohamed\\.nuget\\packages\\",
-        "outputPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass.Android\\obj\\",
+        "projectPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\MyClass.Android.csproj",
+        "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Oussidi_Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\banksy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
-                "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
+              "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
+                "projectPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj"
               }
             }
           }
@@ -78,32 +78,33 @@
         }
       }
     },
-    "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
+    "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
+        "projectUniqueName": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
         "projectName": "MyClass",
-        "projectPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
-        "packagesPath": "C:\\Users\\Oussidi_Mohamed\\.nuget\\packages\\",
-        "outputPath": "D:\\4thCycle\\ASP-C#\\MiniProjects\\MyClassV2\\MyClass\\MyClass\\obj\\",
+        "projectPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\MyClass.csproj",
+        "packagesPath": "C:\\Users\\banksy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\banksy\\source\\repos\\MyClassV2\\MyClass\\MyClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Oussidi_Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\banksy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -114,8 +115,14 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netstandard2.0": {
           "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
@@ -150,21 +157,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }

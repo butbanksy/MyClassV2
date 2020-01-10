@@ -12,13 +12,13 @@
                 <cv:CardView Margin="10,10,10,10" CardViewHasShadow="True" >
                     <cv:CardView.CardViewContent>
                         <StackLayout Padding="10,10,10,10">
-                            <Label Font="Bold,16" Text="Les informations Personels" />
+                            <Label Font="Bold,16" Text="Les informations personnelles" />
                             <BoxView   VerticalOptions="Center"       
                                        HorizontalOptions="Center"   
                                        HeightRequest="1"      
                                        WidthRequest="200" 
                                        Color="#5b5d68"></BoxView>
-                            <Label Text="Nom Complete : " Font="Bold,14"></Label>
+                            <Label Text="Nom Complet : " Font="Bold,14"></Label>
                             <Label x:Name="nom" />
                             <Label Text="Email : " Font="Bold,14"></Label>
                             <Label x:Name="email" />
@@ -30,7 +30,7 @@
                 <cv:CardView Margin="10,10,10,10" CardViewHasShadow="True" >
                     <cv:CardView.CardViewContent>
                         <StackLayout Padding="10,10,10,10">
-                            <Label Font="Bold,16" Text="Les informations Scolaire" />
+                            <Label Font="Bold,16" Text="Les informations scolaires" />
                             <BoxView   VerticalOptions="Center"       
                                        HorizontalOptions="Center"   
                                        HeightRequest="1"      
